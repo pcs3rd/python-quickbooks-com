@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11"><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=429;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=nWgLpXRB" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://blog.bflarsen.com/?p=132";
+  wbinfo.timestamp = "20160425151421";
+  wbinfo.request_ts = "20160425151421";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160425151421";
+  wbinfo.wombat_sec = "1461597261";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "blog.bflarsen.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=HyR5oymJ" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<title>QuickBooks SDK from Python 2.5</title>
+
+<meta name="generator" content="WordPress 3.0.4"/> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="https://web.archive.org/web/20160425151421cs_/http://blog.bflarsen.com/wp-content/themes/deepblue/style.css" type="text/css" media="screen"/>
+<!--[if lt IE 7]>
+  <link rel="stylesheet" href="http://blog.bflarsen.com/wp-content/themes/deepblue/lt-ie7.css" type="text/css" media="screen" />
+<![endif]-->
+<!--[if lte IE 7]>
+  <link rel="stylesheet" href="http://blog.bflarsen.com/wp-content/themes/deepblue/lte-ie7.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Brent's Developer Rants RSS Feed" href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?feed=rss2"/><link rel="pingback" href="http://blog.bflarsen.com/xmlrpc.php"/>
+<script type="text/javascript" src="https://web.archive.org/web/20160425151421js_/http://blog.bflarsen.com/wp-content/themes/deepblue/hover.js"></script>
+
+<!--we need this for plugins-->
+<link rel="alternate" type="application/rss+xml" title="Brent's Developer Rants » QuickBooks SDK from Python 2.5 Comments Feed" href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?feed=rss2&amp;p=132"/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.bflarsen.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.bflarsen.com/wp-includes/wlwmanifest.xml"/> 
+<link rel="index" title="Brent's Developer Rants" href="http://blog.bflarsen.com"/>
+<link rel="start" title="Comparison of Auto Incrementing Primary Key feature in several SQL Dialects" href="http://blog.bflarsen.com/?p=5"/>
+<link rel="next" title="Comparison of Auto Incrementing Primary Key feature in several SQL Dialects" href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=5"/>
+<meta name="generator" content="WordPress 3.0.4"/>
+<link rel="canonical" href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=132"/>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:130px;padding-top:10px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20160425151421/http://web.archive.org/screenshot/http://blog.bflarsen.com/?p=132"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=132" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=132" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://blog.bflarsen.com/?p=132" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160425151421" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap">Mar</td>
+		  <td class="c" id="displayMonthEl" title="You are here: 15:14:21 Apr 25, 2016">APR</td>
+		  <td class="f" nowrap="nowrap">May</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" /></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 15:14:21 Apr 25, 2016">25</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap">2015</td>
+		  <td class="c" id="displayYearEl" title="You are here: 15:14:21 Apr 25, 2016">2016</td>
+		  <td class="f" nowrap="nowrap">2017</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20160425151421*/http://blog.bflarsen.com/?p=132" title="See a list of every capture for this URL">1 capture</a>
+	      <div class="r" title="Timespan for captures of this URL">25 Apr 2016</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="625" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/webwidecrawl);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/webwidecrawl" target="_new"><span class="wm-title">Internet Archive</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  The Internet Archive discovers and captures web pages through many different web crawls.
+
+At any given time several distinct crawls are running, some for months, and some every day or longer.
+
+View the web archive through the <a href="http://archive.org/web/web.php">Wayback Machine</a>.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/wide00014)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/wide00014" target="_new"><span class="wm-title">Wide Crawl Number 14 - Started Mar 4th, 2016 - Ended Sep 15th, 2016</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  <span style="font-family: Arial; font-size: 16px;">The seed for Wide00014 was:</span><br style="font-family: Arial; font-size: 16px;"><div style="font-family: Arial; font-size: 16px;"><br></div><div style="font-family: Arial; font-size: 16px;">- Slash pages from every domain on the web:<br><div><br></div><div>-- a list of domains using Survey crawl seeds<br></div><div>-- a list of domains using Wide00012 web graph<br></div><div>-- a list of domains using Wide00013 web graph<br></div></div><div style="font-family: Arial; font-size: 16px;"><br></div><div style="font-family: Arial; font-size: 16px;">- Top ranked pages (up to a max of 100) from every linked-to domain using the Wide00012 inter-domain navigational link graph<br><div><br></div><div>-- a ranking of all URLs that have more than one incoming inter-domain link (rank was determined by number of incoming links using Wide00012 inter domain links)<br></div><div>-- up to a maximum of 100 most highly ranked URLs per domain&nbsp;</div></div><div style="font-family: Arial; font-size: 16px;"><br></div><span style="font-family: Arial; font-size: 16px;">The seed list contains a total of 431,055,452 URLs</span><br style="font-family: Arial; font-size: 16px;"><span style="font-family: Arial; font-size: 16px;">The seed list was further filtered to exclude known porn, and link farm, domains</span><br style="font-family: Arial; font-size: 16px;"><span style="font-family: Arial; font-size: 16px;">The modified seed list contains a total of 428M URLs</span>
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;transpiled=0&amp;referer=https%3A//web.archive.org/web/20160425151421/http%3A//blog.bflarsen.com/%3Fp%3D132"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(625,27,25,2,"web","http://blog.bflarsen.com/?p=132","20160425151421",1996,"/_static/",["/_static/css/banner-styles.css?v=HyR5oymJ","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<div id="header">
+    <div class="title"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/" title="Brent's Developer Rants">Brent&#039;s Developer Rants</a></div>
+    <div class="description">Just another WordPress site</div>
+	
+<!--create the searchfield-->
+<div class="searchform">
+<form method="get" id="searchform" action="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/">
+<input type="text" value="Search on this blog..." name="s" class="s" onfocus="if (this.value == 'Search on this blog...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search on this blog...';}"/>
+<input type="image" class="button" src="https://web.archive.org/web/20160425151421im_/http://blog.bflarsen.com/wp-content/themes/deepblue/images/button-submit.jpg" alt="Submit button"/>
+</form>
+</div>
+<!--searchform.php end-->
+
+	<div id="menu">
+	<ul>
+		<li class=""><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/">Home</a></li>		
+		<li class="page_item page-item-2"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?page_id=2" title="About">About</a></li>
+<li class="page_item page-item-131"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?page_id=131" title="About">About</a></li>
+<li class="page_item page-item-21"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?page_id=21" title="Resume">Resume</a></li>
+	</ul>
+	</div>
+
+	<div class="feeds">
+		<span class="rss"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?feed=rss2"><img src="https://web.archive.org/web/20160425151421im_/http://blog.bflarsen.com/wp-content/themes/deepblue/images/rss.gif"></img></a></span>
+	</div>
+
+</div>
+<div id="container">
+<!--header.php end-->
+<div id="content">
+<!--single.php-->
+		
+	<!--loop-->			
+		
+	<!--post title-->
+	<h1 id="post-132"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=132" rel="bookmark" title="Permanent Link: QuickBooks SDK from Python 2.5">QuickBooks SDK from Python 2.5</a></h1>
+
+	<!--Post Meta-->
+	<div class="post-meta-top">
+	<div class="auth"><span>Posted by <strong><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?author=1" title="Posts by brent">brent</a></strong></span></div>
+	<div class="date"><span>November 4, 2008</span></div>
+	<div class="clearboth"></div>
+	</div>
+			
+	<!--content with more link-->
+	<p>So, for a particular project, I found myself needing to get into a client&#8217;s <a href="https://web.archive.org/web/20160425151421/http://quickbooks.intuit.com/">QuickBooks</a> file from a <a href="https://web.archive.org/web/20160425151421/http://www.python.org/">python</a> script.  I had previously done this sort of thing using a <a href="https://web.archive.org/web/20160425151421/http://en.wikipedia.org/wiki/Component_Object_Model">COM</a> from <a href="https://web.archive.org/web/20160425151421/http://en.wikipedia.org/wiki/Visual_Basic">another language</a> using the <a href="https://web.archive.org/web/20160425151421/http://developer.intuit.com/">QuickBooks SDK</a>.</p>
+<p>Being somewhat new to python, I had never even tried to use it to interface with Windows COM Objects before, but, I decided that I knew enough about COM that I could fill in the gaps on whatever documentation I found and so I decided to give it a shot.  I downloaded and installed the QBSDK, from the Intuit site, and got started putting together a script that &#8220;dumps&#8221; some of the data into some export files.</p>
+<p>Of course you are going to have to download and install the <a href="https://web.archive.org/web/20160425151421/http://python.net/crew/mhammond/win32/Downloads.html">Python Win32 Extensions</a>.  (Yes, that means you can&#8217;t do this on Linux, but honestly, you can&#8217;t really run QB on Linux either, so I don&#8217;t feel too bad.)</p>
+<p>Here is what I came up with:</p>
+<pre lang="python">
+import win32com.client
+
+query_rqs = (
+  'Host',
+  'Company',
+  'Account',
+  'Entity',
+  'Terms',
+  'Class',
+  'CustomerType',
+  'VendorType',
+  'JobType',
+  'PaymentMethod',
+  'ShipMethod',
+  'SalesTaxCode',
+  'Item',
+  )
+
+qbxml_header = """<?xml version="1.0" ?>
+<!DOCTYPE QBXML PUBLIC '-//INTUIT//DTD QBXML QBD 1.0//EN'>
+<qbxml>
+<qbxmlmsgsrq onerror="continueOnError">
+"""
+
+qbxml_footer = """
+</qbxmlmsgsrq>
+</qbxml>;
+"""
+
+qb = win32com.client.Dispatch("QBXMLRP.RequestProcessor")
+qb.OpenConnection("Data Sucker", "Data Sucker")
+ticket = qb.BeginSession("",0)
+
+for rq in query_rqs:
+    print "Exporting %s(s)" % rq
+    output_file = open("c:\\qb-export-data\\%s.xml" % rq, 'w')
+    output_file.write(qb.ProcessRequest(ticket, "%s&lt;%sQueryRq&gt;<!--%sQueryRq-->%s" % (qbxml_header, rq, rq, qbxml_footer)))
+    output_file.close()
+print "Data Export Completed"
+
+qb.EndSession(ticket)
+qb.CloseConnection()
+qb = None #drop our QB object
+</pre>
+<p>The First part where we define &#8216;query_rqs&#8217; just makes a convenient list of the object types we are going to query from the QB company file.  Requesting data is a uniform enough process that I decided to just loop through these names below.</p>
+<p>To understand the part about the &#8216;qbxml_header&#8217; and &#8216;qbxml_footer&#8217; you simply have to understand that every exchange with the QB SDK is done in XML.  this header/footer combination will be used to wrap every request we make, so I put it in a variable for easy use a little lower.</p>
+<p>Then, I actually call use the COM API to create a COM object of type &#8220;QBXMLRP.RequestProcessor&#8221; the request processor is the primary object in the QBSDK.  You use it to connect to QuickBooks, and then to send XML requests, and receive XML responses.  The QBSDK does not have COM Objects for every QB object, instead it uses XML to pass properties back and forth about the internal QB objects.  In this way, they have an API that doesn&#8217;t need to change much in order to support different versions and/or editions of their product.</p>
+<p>Anyway, the next line opens up a connection and tells QuickBooks that the application called &#8220;Data Sucker&#8221; wants permission to connect.</p>
+<p>If this is the first time that &#8220;Data Sucker&#8221; has requested access to the company file, QB needs to be open.  It will prompt the user for permission.. .. .. and eventually you will connect (or be denied, depending on your user).</p>
+<p>Then, we begin a session.  the empty string parameter is the name of the company file we want access to.  Empty string implies &#8220;whatever company is opened by the user right now.&#8221;  Which was good enough for my purposes.  I suppose I could have supplied a path to a QB file, but it wasn&#8217;t necessary in this case.  I also elected to use Single User Mode (that is what the 0 in the second parameter means).  If I am sucking data out of the company file, I don&#8217;t want it to be changing between requests &#8212; I want a snapshot that agrees with itself.</p>
+<p>Then, I loop though all the requests (rq) that I listed up at the beginning of the file.  I create an output file with the XML returned by each request that I made (one file per request).</p>
+<p>After the loop, I tidy up a bit and look at the generated export files, and can see that life is good.</p>
+<p>I have no idea whether or not this would work on a QB install without the QB SDK on the same PC.  The Request Processor object might be installed as part of QuickBooks, and the QB SDK might only contain extra resources.  If anyone tries this at home, it would be interesting to know if you can run the script without installing the QBSDK.</p>
+<p>Also, I know that this only works on the Pro and Premier Editions of QuickBooks.  The Basic Edition is intentionally not capable of interfacing with QBSDK &#8212; its an upgrade incentive.</p>
+<p>As this was also an exercise in COM, I want to point out the last line of the script where I set qb = None.  This is the only way I could think of to be sure I had decremented the object reference count and cause the COM engine to destroy the object.  I don&#8217;t know if Python has issues with COM object destruction, but I do know that early releases of VB6 had memory leaks if you didnt explicitly destroy objects (in some scenarios) so I figured, better safe than sorry.</p>
+<p>-Brent</p>
+	
+	<!--for paginate posts-->
+	
+	<!--Post Meta-->
+	<div class="post-meta-bottom">
+	<!--<strong>Tags: </strong><a href="http://blog.bflarsen.com/?tag=export-quickbooks-data" rel="tag">export quickbooks data</a>, <a href="http://blog.bflarsen.com/?tag=python-programming-language" rel="tag">Python Programming Language</a>, <a href="http://blog.bflarsen.com/?tag=qb-xmlsdk" rel="tag">qb xmlsdk</a>, <a href="http://blog.bflarsen.com/?tag=qbxml" rel="tag">qbxml</a>, <a href="http://blog.bflarsen.com/?tag=quickbooks" rel="tag">quickbooks</a>, <a href="http://blog.bflarsen.com/?tag=quickbooks-sdk" rel="tag">Quickbooks SDK</a><br />-->
+	<div class="cat"><span class="cats"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=3" title="View all posts in Python Programming Language" rel="category">Python Programming Language</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=4" title="View all posts in Quickbooks SDK" rel="category">Quickbooks SDK</a></span><span class="tags"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=export-quickbooks-data" rel="tag">export quickbooks data</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=python-programming-language" rel="tag">Python Programming Language</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=qb-xmlsdk" rel="tag">qb xmlsdk</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=qbxml" rel="tag">qbxml</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=quickbooks" rel="tag">quickbooks</a>, <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?tag=quickbooks-sdk" rel="tag">Quickbooks SDK</a></span></div>
+	<div class="clearboth"></div>
+	</div>
+	
+	<p><strong><em>
+    Did you enjoy this post?  Why not <a href="#comments">leave a comment below</a> and continue the conversation, 
+	or <a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?feed=rss2">subscribe to my feed</a> and get articles like this delivered automatically to your feed reader.
+    </em></strong></p>	
+		
+	<!--include comments template-->
+	<div id="comments-wrap">
+
+<a name="comments"></a>
+<h6 class="comments">Comments</h6>
+
+
+<div id="commentlist">
+		<a name="comment-3"></a>
+		<div class="thecomment" id="comment-3">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://0.gravatar.com/avatar/0ea37981df840f29e65e92c03f4863ed?s=69&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>Cool! I have used the QBSDK and PHP to integrate my company&#8217;s website (inventory / customers / sales) with QB and then retrieve and upload an invoice to a demand fulfillment house.  It worked, but there are allot of issues that arise from using PHP&#8230;I can&#8217;t wait to try out python in a similar situation. Thanks for this code example!</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>Tyler</strong></span> <span class="comment-timestamp">on February 13, 2009 @ <a href="#comment-3">5:32 am</a></span> </div>
+		</div>
+</div>
+<div id="commentlist">
+		<a name="comment-2"></a>
+		<div class="thecomment" id="comment-2">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://1.gravatar.com/avatar/9a77f3ed9ef185d29b51638c29e08c3d?s=69&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>The script DID work without QBSDK installed with UK Quickbooks Pro running Python 2.5.<br/>
+However, there was a problem with the parsing the XML. QB didn&#8217;t like the space before the &#8216;?&#8217; on the first line of qbxml_header. Changing it to that below worked (also replacing all the &lt;, &gt; to angled brackets.<br/>
+qbxml_header = &#8220;&#8221;"</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>RichardH</strong></span> <span class="comment-timestamp">on April 12, 2009 @ <a href="#comment-2">8:16 am</a></span> </div>
+		</div>
+</div>
+<div id="commentlist">
+		<a name="comment-4"></a>
+		<div class="authorcomment" id="comment-4">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://0.gravatar.com/avatar/a8860d0317dde6adfaf109ee85b90e04?s=69&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>Richard, Thanks for the feedback.  I went in and tried to &#8220;fix&#8221; the space and the gr/lt stuff, but it looks like wordpress really doesn&#8217;t want me to allow it to look right.  I think it has to do with the &#8220;pre&#8221; tag used for displaying code.</p>
+<p>Anyway, I&#8217;m glad you got it working.  I&#8217;m also glad it works for the UK version of QB pro.  They only had US and Canada back in 2002 when I first got started integrating things with QB via the QB-SDK.</p>
+<p>Again, thanks for the feedback.</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>admin</strong></span> <span class="comment-timestamp">on April 12, 2009 @ <a href="#comment-4">10:43 am</a></span> </div>
+		</div>
+</div>
+<div id="commentlist">
+		<a name="comment-6"></a>
+		<div class="thecomment" id="comment-6">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://1.gravatar.com/avatar/76ee4c9829993bb8ba375b6e38e7f94f?s=69&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>Brent &#8211; I worked with your script, and it needs a couple of minor changes.</p>
+<p>1) the header code should look like this:<br/>
+qbxml_header = &#8220;&#8221;"</p>
+<p>&#8220;&#8221;"<br/>
+There are two changes here: a) I added &#8220;utf-8&#8243; (not strictly necessary, but why not)<br/>
+b) the line about DOCTYPE was only used for very old versions of qbxml; it has been replaced by the qbxml version line</p>
+<p>2) the call to client dispatch should read:<br/>
+qb = win32com.client.Dispatch(&#8220;QBXMLRP2.RequestProcessor&#8221;)</p>
+<p>The change here is the &#8217;2&#8242; at the end of QBXMLRP.  This is very important, as the fields that each version of the SDK know how to fetch and replace vary depending on the qbxml version number AND QBXMLRP (without the &#8217;2&#8242;) only knows how to deal with the fields up to version 2.1.  For most uses, that will not be enough.</p>
+<p>Once those two changes are made, the script works fine.</p>
+<p>Uncle Bruce</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>UncleBruce</strong></span> <span class="comment-timestamp">on July 25, 2009 @ <a href="#comment-6">7:38 pm</a></span> </div>
+		</div>
+</div>
+<div id="commentlist">
+		<a name="comment-7"></a>
+		<div class="thecomment" id="comment-7">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://1.gravatar.com/avatar/76ee4c9829993bb8ba375b6e38e7f94f?s=69&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>Somehow the middle lines of the header disappeared when I hit &#8216;submit&#8217;.</p>
+<p>Here they are again:</p>
+<p>(4 lines)</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>UncleBruce</strong></span> <span class="comment-timestamp">on July 25, 2009 @ <a href="#comment-7">7:40 pm</a></span> </div>
+		</div>
+</div>
+<div id="commentlist">
+		<a name="comment-8"></a>
+		<div class="thecomment" id="comment-8">
+
+		<a href="https://web.archive.org/web/20160425151421/http://gravatar.com/" rel="external nofollow" class="gravatar">
+<img alt="" src="https://web.archive.org/web/20160425151421im_/http://1.gravatar.com/avatar/76ee4c9829993bb8ba375b6e38e7f94f?s=69&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D69&amp;r=G" class="avatar avatar-69 photo" height="69" width="69"/>		</a>
+
+		<div class="comment-body"><p>Hmmm &#8211; they&#8217;ve disappeared again!</p>
+<p>I suspect that XML is somehow treated specially by this page.</p>
+<p>In the lines below, the &#8216;less than&#8217; sign and the &#8216;greater than&#8217; sign have been replaced by open and close curly brace.</p>
+<p>{?xml version=&#8221;1.0&#8243; encoding=&#8221;utf-8&#8243;?}<br/>
+{?qbxml version=&#8221;6.0&#8243;?}<br/>
+{QBXML}<br/>
+{QBXMLMsgsRq onError=&#8221;continueOnError&#8221;}</p>
+<p>To get code that will actually execute, change them back to less than or greater than.</p>
+<p>UncleBruce</p>
+</div>
+<div class="clearboth"></div>
+
+		<div class="comment-metadata"><span class="comment-author">Comment by <strong>UncleBruce</strong></span> <span class="comment-timestamp">on July 25, 2009 @ <a href="#comment-8">7:42 pm</a></span> </div>
+		</div>
+</div>
+
+
+<h6 class="postcomment">Leave a comment</h6>
+
+<form action="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/wp-comments-post.php" method="post" id="commentform">
+	
+	<p>
+	<input type="text" name="author" id="author" class="textarea" value="" size="28" tabindex="1"/>
+	<label for="author">Name</label> (required)	</p>
+
+	<p>
+	<input type="text" name="email" id="email" value="" size="28" tabindex="2"/>
+	<label for="email">E-mail</label> (required)	</p>
+
+	<p>
+	<input type="text" name="url" id="url" value="" size="28" tabindex="3"/>
+	<label for="url"><acronym title="Uniform Resource Identifier">URI</acronym></label>
+	</p>
+
+	
+	<p>
+	<label for="comment">Your Comment</label>
+	<br/>
+	<textarea name="comment" id="comment" cols="60" rows="10" tabindex="4"></textarea>
+	</p>
+
+	<p>
+	<input name="submit" id="submit" type="submit" tabindex="5" value="submit"/>
+	<input type="hidden" name="comment_post_ID" value="132"/>
+	<input type="hidden" name="redirect_to" value="/?p=132"/>
+	</p>
+	</form>
+
+</div>
+	
+	<!--do not delete-->
+		
+	
+<!--single.php end-->
+</div>
+
+<!--include sidebar-->
+<!--sidebar.php-->
+<div id="sidebar">
+
+<div class="ads">
+</div>
+
+<div id="sidebarwrap">
+	<div id="popular">
+	<ul>
+		<li>
+		<h2>Popular Articles</h2>
+		<ul>
+    	    			<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=143">Printable HTML Pages</a></li>
+				<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=133">Sample User Authentication Database Schema</a></li>
+				<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=121">C# With Block</a></li>
+				<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=116">Why Doesn&#8217;t LINQ Perform?</a></li>
+				<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=103">HOW TO: Print-off a SQL Server 2008 Database Schema</a></li>
+				</ul>
+		</li>
+	</ul>
+	<div id="popular-bottom"></div>
+	</div>
+
+	<!--l_sidebar.php-->
+<div id="l_sidebar">
+	<ul>
+	
+<!--recent posts-->
+	<li>
+    	<h2>Recent Posts</h2>
+        <ul>
+        	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=143" title="Printable HTML Pages">Printable HTML Pages</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=133" title="Sample User Authentication Database Schema">Sample User Authentication Database Schema</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=121" title="C# With Block">C# With Block</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=116" title="Why Doesn’t LINQ Perform?">Why Doesn&#8217;t LINQ Perform?</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=103" title="HOW TO: Print-off a SQL Server 2008 Database Schema">HOW TO: Print-off a SQL Server 2008 Database Schema</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=89" title="My Email Schema in SQL Server 2008">My Email Schema in SQL Server 2008</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=85" title="Example Email Database Schema">Example Email Database Schema</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=78" title="Initial thoughts on ASP.NET MVC">Initial thoughts on ASP.NET MVC</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=68" title="Using XSLT to transform XML into HTML">Using XSLT to transform XML into HTML</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=48" title="Oracle PL/SQL Associative Arrays Example">Oracle PL/SQL Associative Arrays Example</a></li>
+        </ul>
+	</li>
+
+<!--list of categories, order by name, without children categories, no number of articles per category-->
+	<li>
+	    <h2>Topics</h2>			
+	    <ul>
+	    	<li class="cat-item cat-item-50"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=50" title="View all posts filed under ADO.NET">ADO.NET</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=52" title="View all posts filed under LINQ">LINQ</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=9" title="View all posts filed under Microsoft SQL Server">Microsoft SQL Server</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=56" title="View all posts filed under My Sample DB">My Sample DB</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=10" title="View all posts filed under MySQL">MySQL</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=11" title="View all posts filed under Oracle Database">Oracle Database</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=12" title="View all posts filed under PostgreSQL">PostgreSQL</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=3" title="View all posts filed under Python Programming Language">Python Programming Language</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=4" title="View all posts filed under Quickbooks SDK">Quickbooks SDK</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=13" title="View all posts filed under Sqlite">Sqlite</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=14" title="View all posts filed under Vanilla SQL">Vanilla SQL</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=42" title="View all posts filed under XML">XML</a>
+</li>
+	    </ul>
+	</li>
+
+		</ul>
+</div>
+<!--l_sidebar.php end-->	<!--r_sidebar.php-->
+<div id="r_sidebar">
+	<ul>
+	
+<!--recent posts-->
+	<li>
+        <h2>Archives</h2>
+	    <ul>
+	    	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200907" title="July 2009">July 2009</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200905" title="May 2009">May 2009</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200903" title="March 2009">March 2009</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200902" title="February 2009">February 2009</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200901" title="January 2009">January 2009</a></li>
+	<li><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?m=200811" title="November 2008">November 2008</a></li>
+	    </ul>
+	</li>
+
+<!--Blogroll-->
+	<li>
+        <h2>Links</h2>
+	    <ul>
+        <li><a href="https://web.archive.org/web/20160425151421/http://codex.wordpress.org/">Documentation</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://wordpress.org/extend/plugins/">Plugins</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://wordpress.org/support/">Support Forum</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://wordpress.org/extend/themes/">Themes</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://wordpress.org/news/">WordPress Blog</a></li>
+<li><a href="https://web.archive.org/web/20160425151421/http://planet.wordpress.org/">WordPress Planet</a></li>
+        </ul>
+    </li>
+
+<!-- Categories -->
+	<li>
+	    <h2>Topics</h2>			
+	    <ul>
+	    	<li class="cat-item cat-item-50"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=50" title="View all posts filed under ADO.NET">ADO.NET</a>
+</li>
+	<li class="cat-item cat-item-52"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=52" title="View all posts filed under LINQ">LINQ</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=9" title="View all posts filed under Microsoft SQL Server">Microsoft SQL Server</a>
+</li>
+	<li class="cat-item cat-item-56"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=56" title="View all posts filed under My Sample DB">My Sample DB</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=10" title="View all posts filed under MySQL">MySQL</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=11" title="View all posts filed under Oracle Database">Oracle Database</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=12" title="View all posts filed under PostgreSQL">PostgreSQL</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=3" title="View all posts filed under Python Programming Language">Python Programming Language</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=4" title="View all posts filed under Quickbooks SDK">Quickbooks SDK</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=13" title="View all posts filed under Sqlite">Sqlite</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=14" title="View all posts filed under Vanilla SQL">Vanilla SQL</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?cat=42" title="View all posts filed under XML">XML</a>
+</li>
+	    </ul>
+	</li>
+
+		</ul>
+</div>
+<!--r_sidebar.php end-->	<div class="sidebar-bot"></div>
+</div>
+
+</div>
+<!--sidebar.php end--><!--include footer-->
+<div class="clearboth"></div>
+</div>
+<div class="container-bot-bg"></div>
+<div id="footer">
+<!--footer.php-->
+<div id="footer-wrap">
+	
+Copyright Brent&#039;s Developer Rants | <a href="https://web.archive.org/web/20160425151421/http://www.dailyblogtips.com/wordpress-themes/">Theme by DailyBlogTips</a>
+                 
+<!--necessary-->
+</div>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 15:14:21 Apr 25, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:59:39 Jul 01, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots.policy: 0.224
+  RedisCDXSource: 15.96
+  esindex: 0.011
+  PetaboxLoader3.resolve: 126.209
+  LoadShardBlock: 79.26 (3)
+  captures_list: 111.566
+  PetaboxLoader3.datanode: 179.699 (4)
+  CDXLines.iter: 13.551 (3)
+  load_resource: 300.54
+  exclusion.robots: 0.235
+-->
