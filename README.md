@@ -8,4 +8,7 @@ pywin32
 json
 
 #Setup  
-regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dll"
+regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dll"\
+
+#Working on / High priority:
+api: itemquantity
