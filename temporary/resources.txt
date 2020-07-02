@@ -5,3 +5,4 @@ https://developer.intuit.com/app/developer/qbo/docs/develop/explore-the-quickboo
 https://developer.intuit.com/app/developer/qbdesktop/docs/develop/sample-applications-and-code
 https://developer.intuit.com/app/developer/qbdesktop/docs/develop/sample-applications-and-code#itemsalestaxqueryrq-any
 https://github.com/IntuitDeveloper/QBXML_SDK13_Samples/blob/master/xmlfiles/ItemInventoryQueryRq.xml
+https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask
