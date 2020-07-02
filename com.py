@@ -2,18 +2,9 @@ import json
 from win32com import client as win32
 import struct
 #start defining functions
-qbxml_header = "<?qbxml version=\"8.0\"?>"
-qbxmlbody = """
-
-"""
-
-qbxml_footer = """
-</QBXML>
-;
-"""
 def quickbooks_connect():
     #I believe this is the correct statement for the above import.
-    qb = win32.Dispatch("QBPOSXMLRPLib.RequestProcessor")
+    qb = win32.gencache.EnsureDispatch("QBPOSXMLRPLib.RequestProcessor")
     #qb = win32.client.Dispatch("QBXMLRPLib.RequestProcessor")
     qb.OpenConnection("python-quickbooks-com", "REST api application for quickbooks.")
     ticket = qb.BeginSession("",0)
