@@ -1,0 +1,7 @@
+https://help.developer.intuit.com/s/question/0D50f000059Lpjt/qbfc-c-how-can-i-connect-to-compnany-file-without-open-the-ui
+https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference/qbpos/iteminventoryquery
+https://web.archive.org/web/20160425151421/http://blog.bflarsen.com/?p=132
+https://developer.intuit.com/app/developer/qbo/docs/develop/explore-the-quickbooks-online-api/data-queries#select-statement-syntax
+https://developer.intuit.com/app/developer/qbdesktop/docs/develop/sample-applications-and-code
+https://developer.intuit.com/app/developer/qbdesktop/docs/develop/sample-applications-and-code#itemsalestaxqueryrq-any
+https://github.com/IntuitDeveloper/QBXML_SDK13_Samples/blob/master/xmlfiles/ItemInventoryQueryRq.xml

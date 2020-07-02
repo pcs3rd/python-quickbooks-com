@@ -2,14 +2,13 @@ import json
 from win32com import client as win32
 import struct
 #start defining functions
-qbxml_header = """
-
-
+qbxml_header = "<?qbxml version=\"8.0\"?>"
+qbxmlbody = """
 
 """
 
 qbxml_footer = """
-
+</QBXML>
 ;
 """
 def quickbooks_connect():
@@ -18,8 +17,17 @@ def quickbooks_connect():
     #qb = win32.client.Dispatch("QBXMLRPLib.RequestProcessor")
     qb.OpenConnection("python-quickbooks-com", "REST api application for quickbooks.")
     ticket = qb.BeginSession("",0)
+
 def itemquantity(obj):
-    qb.ProcessRequest(ticket, "%s<%sQueryRq>%s" % (qbxml_header, obj, obj, qbxml_footer))
+    response = qb.DoRequestsFromXMLString(f"""
+    <?qbxml version=\"8.0\"?>
+        <QBXML>
+            <QBXMLMsgsRq onError=\"stopOnError\">
+                <ItemInventoryQueryRq requestID=\"""" + obj +"""\" />
+            </QBXMLMsgsRq>
+        </QBXML>\"""")
+    print(response)
+    return response
 
 
 
