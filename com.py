@@ -7,17 +7,18 @@ def quickbooks_connect():
     qb = win32.gencache.EnsureDispatch("QBPOSXMLRPLib.RequestProcessor")
     #qb = win32.client.Dispatch("QBXMLRPLib.RequestProcessor")
     qb.OpenConnection("python-quickbooks-com", "REST api application for quickbooks.")
-    ticket = qb.BeginSession("",0)
+    ticket = qb.BeginSession("")
 
 def itemquantity(obj):
-    response = qb.DoRequestsFromXMLString(f"""
+    xmlstream = """
     <?qbxml version=\"8.0\"?>
         <QBXML>
             <QBXMLMsgsRq onError=\"stopOnError\">
                 <ItemInventoryQueryRq requestID=\"""" + obj +"""\" />
             </QBXMLMsgsRq>
-        </QBXML>\"""")
-    print(response)
+        </QBXML>\""""
+    print(xmlstream)
+    qb.ProcessRequest(ticket, xmlstream)    
     return response
 
 
