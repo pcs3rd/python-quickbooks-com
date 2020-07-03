@@ -51,5 +51,3 @@ def itemprice(data):
 #First, we need to determine if this is running with 64-bit python, because quickbooks is 32-bit.
 if (( 8 * struct.calcsize("P")) == '64'):
     print("ERROR: Quickbooks POS is a 32-bit ONLY application. \n This will prevent this library from accessing Quickbooks POS \n Please run this in a 32 bit address space.")
-else:
-    quickbooks_connect()
