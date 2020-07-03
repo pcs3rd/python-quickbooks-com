@@ -1,6 +1,7 @@
 import json
 from win32com import client as win32
 import struct
+response = setresponse
 #start defining functions
 def quickbooks_connect():
     #I believe this is the correct statement for the above import.
