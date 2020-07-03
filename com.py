@@ -9,28 +9,47 @@ def quickbooks_connect():
     qb.OpenConnection("python-quickbooks-com", "REST api application for quickbooks.")
     ticket = qb.BeginSession("")
 
-def itemquantity(obj):
+#Request item quantity. This should return some data?
+def itemquantity(data):
     xmlstream = """
     <?qbxml version=\"8.0\"?>
         <QBXML>
             <QBXMLMsgsRq onError=\"stopOnError\">
-                <ItemInventoryQueryRq requestID=\"""" + obj +"""\" />
+                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
             </QBXMLMsgsRq>
         </QBXML>\""""
-    print(xmlstream)
-    qb.ProcessRequest(ticket, xmlstream)    
+    #debug print(xmlstream)
+    response = qb.ProcessRequest(ticket, xmlstream)
     return response
 
+#Request item cost wholesale. This should return some data?
+def itemcost(data):
+    xmlstream = """
+    <?qbxml version=\"8.0\"?>
+        <QBXML>
+            <QBXMLMsgsRq onError=\"stopOnError\">
+                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
+            </QBXMLMsgsRq>
+        </QBXML>\""""
+    #debug print(xmlstream)
+    response = qb.ProcessRequest(ticket, xmlstream)
+    return response
 
-
-
-
-
+def itemprice(data):
+    xmlstream = """
+    <?qbxml version=\"8.0\"?>
+        <QBXML>
+            <QBXMLMsgsRq onError=\"stopOnError\">
+                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
+            </QBXMLMsgsRq>
+        </QBXML>\""""
+    #debug print(xmlstream)
+    response = qb.ProcessRequest(ticket, xmlstream)
+    return response
 
 #this is where the magic happens.
 #First, we need to determine if this is running with 64-bit python, because quickbooks is 32-bit.
 if (( 8 * struct.calcsize("P")) == '64'):
-    print("ERROR: Quickbooks POS is a 32-bit ONLY application. \n This will prevent this library from accessing Quickbooks POS \n Please run this in a 32 bit space.")
+    print("ERROR: Quickbooks POS is a 32-bit ONLY application. \n This will prevent this library from accessing Quickbooks POS \n Please run this in a 32 bit address space.")
 else:
-    print("Starting Quickbooks_connect function")
     quickbooks_connect()
