@@ -13,37 +13,12 @@ def quickbooks_connect():
 #Request item quantity. This should return some data?
 def itemquantity(data):
     xmlstream = """
-    <?qbxml version=\"8.0\"?>
-        <QBXML>
-            <QBXMLMsgsRq onError=\"stopOnError\">
-                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
-            </QBXMLMsgsRq>
-        </QBXML>\""""
-    #debug print(xmlstream)
-    response = qb.ProcessRequest(ticket, xmlstream)
-    return response
-
-#Request item cost wholesale. This should return some data?
-def itemcost(data):
-    xmlstream = """
-    <?qbxml version=\"8.0\"?>
-        <QBXML>
-            <QBXMLMsgsRq onError=\"stopOnError\">
-                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
-            </QBXMLMsgsRq>
-        </QBXML>\""""
-    #debug print(xmlstream)
-    response = qb.ProcessRequest(ticket, xmlstream)
-    return response
-
-def itemprice(data):
-    xmlstream = """
-    <?qbxml version=\"8.0\"?>
-        <QBXML>
-            <QBXMLMsgsRq onError=\"stopOnError\">
-                <ItemInventoryQueryRq requestID=\"""" + data +"""\" />
-            </QBXMLMsgsRq>
-        </QBXML>\""""
+<?qbposxml version="1.0"?>
+<QBPOSXML>
+  <QBPOSXMLMsgsRq onError="stopOnError">
+     <ItemInventoryQueryRq>""" + data + """</ItemInventoryQueryRq>
+  </QBPOSXMLMsgsRq>
+</QBPOSXML>"""
     #debug print(xmlstream)
     response = qb.ProcessRequest(ticket, xmlstream)
     return response
