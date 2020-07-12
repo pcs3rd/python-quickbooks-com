@@ -16,9 +16,9 @@ def itemquantity(data):
 <?qbposxml version="1.0"?>
 <QBPOSXML>
   <QBPOSXMLMsgsRq onError="stopOnError">
-     <ItemInventoryQueryRq>""" + data + """</ItemInventoryQueryRq>
+     <ItemInventoryQueryRq>""" , data , """</ItemInventoryQueryRq>
   </QBPOSXMLMsgsRq>
-</QBPOSXML>"""
+</QBPOSXML>""",sep=''
     #debug print(xmlstream)
     response = qb.ProcessRequest(ticket, xmlstream)
     return response
