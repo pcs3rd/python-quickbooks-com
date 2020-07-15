@@ -16,13 +16,6 @@ regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dl
 
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
-- [x] Base: QBPOS communication  
-- [x] Query: itemquantity  
-- [ ] Modify: modifyitemquantity
-- [x] Query: itemcost
-- [ ] Modify: modifyitemcost
-- [x] Query: itemprice 
-- [ ] Modify: modifyitemprice
-- [ ] Modify: iteminventoryadd
+- [ ] You know, it qould be nice to get the ProcessRequest working on like line 19 of com.py
 
 
