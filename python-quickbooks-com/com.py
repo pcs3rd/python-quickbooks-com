@@ -5,7 +5,7 @@ response = "" #make some variables global
 qb = "" #make some variables global
 ticket = "" #make some variables global
 #start defining functions
-def quickbooks_connect():
+def quickbooks_open():
     #I believe this is the correct statement for the above import.
     qb = win32.gencache.EnsureDispatch("QBPOSXMLRPLib.RequestProcessor")
     #qb = win32.client.Dispatch("QBXMLRPLib.RequestProcessor")
@@ -13,11 +13,15 @@ def quickbooks_connect():
     ticket = qb.BeginSession("")
 
 #Request item quantity. This should return some data?
-def itemquantity(data):
+def itemquery(data):
     xmlstream = "<?qbposxml version=\"1.0\"?>\n<QBPOSXML>\n  <QBPOSXMLMsgsRq onError=\"stopOnError\">\n     <ItemInventoryQueryRq>" , str(data) , "</ItemInventoryQueryRq>\n  </QBPOSXMLMsgsRq>\n</QBPOSXML>"
     #debug print(xmlstream)
     response = qb.ProcessRequest(ticket, xmlstream)
     return response
+
+def quickbooks_close(): #drop the session
+    qb.EndSession()
+    qb.CloseConnection()
 
 #this is where the magic happens.
 #First, we need to determine if this is running with 64-bit python, because quickbooks is 32-bit.
