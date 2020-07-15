@@ -8,7 +8,7 @@ def open(): #Open a connection, instantate QBPOSXMLRPLib
     qb = win32.gencache.EnsureDispatch("QBPOSXMLRPLib.RequestProcessor")
     qb.OpenConnection("python-quickbooks-com", "REST api application for quickbooks.")
     return qb
-def begin(): #Begin a session
+def begin(qb): #Begin a session
         ticket = qb.BeginSession("")
         return ticket
 def close(qb, ticket): #Drop the session. Just like the now broken microphone.

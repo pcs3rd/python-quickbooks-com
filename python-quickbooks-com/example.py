@@ -1,5 +1,10 @@
 import com as pyqb
+print("open connection")
 qb = pyqb.open()
-tk = pyqb.begin()
-pyqb.itemquery(qb, tk, 43313)
+print("begin session")
+tk = pyqb.begin(qb)
+print("request item data")
+print(pyqb.itemquery(qb, tk, 43313))
+print("close")
 pyqb.close(qb, tk)
+print("done")
