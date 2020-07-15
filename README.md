@@ -16,6 +16,6 @@ regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dl
 
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
-- [ ] You know, it would be nice to get the ProcessRequest working on like line 19 of com.py
+- [ ] You know, it would be nice to get the ProcessRequest qbposfc method working on like line 19 of com.py
 
 
