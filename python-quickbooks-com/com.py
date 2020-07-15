@@ -1,7 +1,9 @@
 import json
 from win32com import client as win32
 import struct
-response = setresponse
+response = "" #make some variables global
+qb = "" #make some variables global
+ticket = "" #make some variables global
 #start defining functions
 def quickbooks_connect():
     #I believe this is the correct statement for the above import.
@@ -12,13 +14,7 @@ def quickbooks_connect():
 
 #Request item quantity. This should return some data?
 def itemquantity(data):
-    xmlstream = """
-<?qbposxml version="1.0"?>
-<QBPOSXML>
-  <QBPOSXMLMsgsRq onError="stopOnError">
-     <ItemInventoryQueryRq>""" , data , """</ItemInventoryQueryRq>
-  </QBPOSXMLMsgsRq>
-</QBPOSXML>""",sep=''
+    xmlstream = "<?qbposxml version=\"1.0\"?>\n<QBPOSXML>\n  <QBPOSXMLMsgsRq onError=\"stopOnError\">\n     <ItemInventoryQueryRq>" , str(data) , "</ItemInventoryQueryRq>\n  </QBPOSXMLMsgsRq>\n</QBPOSXML>"
     #debug print(xmlstream)
     response = qb.ProcessRequest(ticket, xmlstream)
     return response
