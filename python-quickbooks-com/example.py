@@ -1,4 +1,5 @@
 import com as pyqb
-qb = pyqb.quickbooks_open()
-pyqb.itemquery(qb, 43313)
-pyqb.quickbooks_close(qb)
+qb = pyqb.open()
+tk = pyqb.begin()
+pyqb.itemquery(qb, tk, 43313)
+pyqb.close(qb, tk)
