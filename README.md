@@ -16,7 +16,7 @@ regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dl
 
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
-- [x] You know, it would be nice to get the ProcessRequest qbposfc method working on like line 19 of com.py
+- [x] Haha, inventory machine go burrrrr
 - [ ] code works too well; returns ENTIRE inventory and not just requested item. Make itemquery only return data for item requested.
 
 
