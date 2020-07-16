@@ -41,5 +41,5 @@ Close the session. This also needs `qb, tk`.
   
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
-- [ ] Base: Grab item data using item number.
+- [x] Base: Grab item data using item number.
 - [x] Haha, inventory machine go burrrrr (inventory() function)
