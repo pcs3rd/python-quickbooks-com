@@ -27,7 +27,7 @@ Create a connection object
 Create a ticket object. The variable `qb` has to be passed to the begin() function. `qb` has to be created first for eveything to be happy. This will also use the active company file on the first available server, the network I am developing on has a single qbpos server.  
 ```tk = pyqb.begin(qb)```  
 
-Request an item by item number. This needs the `qb` and `tk` variables passed to it in this exact order:  
+Request item information by item number. This needs the `qb` and `tk` variables passed to it in this exact order:  
 ```pyqb.itemquery(qb, tk, <ItemNumber>)```  
   
 Print the inventory. The original function name was proposed to be `NowThatsALotOfData`. Long story short, if this is put in a print() statement and the output pipped, it may create a huge file with potentially weird encoding. This only needs the `qb, tk` variables passed.  
