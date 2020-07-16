@@ -19,7 +19,7 @@ EDIT: This may not be needed^
   
 # Usage  
   
-Importing: Not sure, haven't used this as a installed library. but import com.py with:  
+Importing: Not sure, haven't used this as a installed library, but import com.py (from the .py file) with:  
 ```import com as pyqb```  
   
 Create a connection object  
@@ -41,4 +41,4 @@ Close the session. This also needs `qb, tk`.
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
 - [ ] Base: Grab item data using item number.
-- [x] Haha, inventory machine go burrrrr
+- [x] Haha, inventory machine go burrrrr (inventory() function)
