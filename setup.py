@@ -12,11 +12,11 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'quickbooks-com'
+NAME = 'python-quickbooks-com'
 DESCRIPTION = 'A windows COM library to make accessing quickbooks POS easy(er)'
 URL = 'https://github.com/pcs3rd/python-quickbooks-com'
 EMAIL = 'rhean1620@gmail.com'
-AUTHOR = 'rhean1620@gmail.com'
+AUTHOR = 'pcs3rd'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1.0'
 
@@ -103,9 +103,9 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    #packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
+     py_modules=['qbcom'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
