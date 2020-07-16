@@ -4,11 +4,13 @@
 # Compatibility note:  
  The 32-bit version of python3 must be installed because of how windows applications work.
 # Dependencies  
-
-python 3.x
-  python libraries:
-pywin32
-json
+  
+### Windows dependancies:  
+`python 3.x (32 bit)`  
+`pip`  
+### python libraries:  
+`pywin32`  
+`json`  
 
 # Setup  
 
