@@ -40,6 +40,6 @@ Close the session. This also needs `qb, tk`.
   
   
 # Working on / High priority features:  
-- [ ] Base: Parse a configuration file  
 - [x] Base: Grab item data using item number.
-- [x] Haha, inventory machine go burrrrr (inventory() function)
+- [x] Haha, inventory machine go burrrrr (inventory() function)  
+- [ ] Implament some more functions.
