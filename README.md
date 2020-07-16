@@ -12,25 +12,31 @@ json
 
 # Setup  
 
-regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dll"\
+regsvr32 "C:\Program Files\Common/ Files\Intuit\QBPOSSDkRuntime\QBPOSSMLRPLib.dll"\  
+EDIT: This may not be needed^  
+  
+# Usage  
+  
+Importing: Not sure, haven't used this as a installed library. but import com.py with:  
+```import com as pyqb```  
+  
+Create a connection object  
+```qb = pyqb.open()```  
+  
+Create a ticket object. The variable `qb` has to be passed to the begin() function. `qb` has to be created first for eveything to be happy. This will also use the active company file on the first available server, the network I am developing on has a single qbpos server.  
+```tk = pyqb.begin(qb)```  
 
+Request an item by item number. This needs the `qb` and `tk` variables passed to it in this exact order:  
+```pyqb.itemquery(qb, tk, <ItemNumber>)```  
+  
+Print the inventory. The original function name was proposed to be `NowThatsALotOfData`. Long story short, if this is put in a print() statement and the output pipped, it may create a huge file with potentially weird encoding. This only needs the `qb, tk` variables passed.  
+```pyqb.inventory(qb, tk)```  
+  
+Close the session. This also needs `qb, tk`.  
+```pyqb.close(qb, tk)```  
+  
+  
 # Working on / High priority features:  
 - [ ] Base: Parse a configuration file  
+- [ ] Base: Grab item data using item number.
 - [x] Haha, inventory machine go burrrrr
-- [ ] code works too well; returns ENTIRE inventory and not just requested item. Make itemquery only return data for item requested. need to fix xml string. (https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference/qbpos/iteminventoryquery)*  
-  
-  
-  
-  
-  
-  
-  *
-  ```
-  <!-- BEGIN OR -->
-     <ItemNumberFilter> <!-- optional -->
-        <!-- MatchNumericCriterion may have one of the following values: LessThan, LessThanEqual, Equal, GreaterThan, GreaterThanEqual -->
-          <MatchNumericCriterion >ENUMTYPE</MatchNumericCriterion> <!-- required -->
-          <ItemNumber >INTTYPE</ItemNumber> <!-- required -->
-     </ItemNumberFilter>
-  <!-- OR -->
-```
