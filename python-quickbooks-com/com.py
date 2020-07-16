@@ -28,7 +28,7 @@ def itemquery(qb, ticket, data): #Request item information. This should return s
 def inventory(qb, ticket): #prints entire inventory. May be good for making a backup of a QB database. Don't know. What I do know is that it's piped output makes a finicky .txt file. Kinda weird.
     xmlstream = "<?qbposxml version=\"1.0\"?>\n<QBPOSXML>\n  <QBPOSXMLMsgsRq onError=\"stopOnError\">\n     <ItemInventoryQueryRq></ItemInventoryQueryRq>\n  </QBPOSXMLMsgsRq>\n</QBPOSXML>"
     response = qb.ProcessRequest(ticket, xmlstream)
-    return respnonce
+    return responce
 
 #this is where the magic happens.
 if (( 8 * struct.calcsize("P")) == '64'): #check for a 32 bit address space, because the quickbooks I'm developing on is 32-bit only. The more I work on this, the more I am reminded that this is OLD software.
