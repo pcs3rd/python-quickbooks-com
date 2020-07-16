@@ -2,7 +2,10 @@ import json
 from win32com import client as win32
 import struct
 
-#Session managing functions
+########################################################
+#Session managing functions                            #
+########################################################
+
 def open(): #Open a connection, instantate QBPOSXMLRPLib
     #I believe this is the correct statement for the above import.
     qb = win32.gencache.EnsureDispatch("QBPOSXMLRPLib.RequestProcessor")
@@ -17,8 +20,16 @@ def close(qb, ticket): #Drop the session. Just like the now broken microphone.
     qb.EndSession(ticket)
     qb.CloseConnection()
     #Do not return anything for the time being. It is not needed... At least I don't think... to include an exit code.
-    
-#API functions
+
+#########################################################
+#  library functions                                    #
+#########################################################
+
+def xml(qb, ticket, data): #Lets user just feed xml into library to be sent and parsed. Any errors come back from QBPOS itself. This is so peeps can pass the xml strings for funcions that are not yet implemented.
+    xmlstream = str(data)
+    response = qb.ProcessRequest(ticket, xmlstream)
+    return response
+
 def itemquery(qb, ticket, data): #Request item information. This should return some data?
     xmlstream = "    <?qbposxml version=\"1.0\"?>\n    <QBPOSXML>\n       <QBPOSXMLMsgsRq onError=\"stopOnError\">\n          <ItemInventoryQueryRq>\n             <ItemNumberFilter> \n             <MatchNumericCriterion >Equal</MatchNumericCriterion>\n             <ItemNumber >" + str(data) + "</ItemNumber>\n              </ItemNumberFilter>\n          </ItemInventoryQueryRq>\n       </QBPOSXMLMsgsRq>\n    </QBPOSXML>"
     #debug print(xmlstream)
