@@ -11,6 +11,7 @@
 ### python libraries:  
 `pywin32`  
 `json`  
+`xmltodict'  
 
 # Setup  
 
