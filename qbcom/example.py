@@ -1,10 +1,13 @@
-import com as pyqb
+import qbcom as pyqb
+import xmltodict
 print("open connection")
 qb = pyqb.open()
-print("begin session")
 tk = pyqb.begin(qb)
-print("request item data")
+print("Fetch info for item 43313 in json format\n\n")
+print(xmltodict.parse(pyqb.itemquery(qb, tk, 43313)))
+print("Fetch info for item 43313 in xml format\n\n")
 print(pyqb.itemquery(qb, tk, 43313))
-print("close")
 pyqb.close(qb, tk)
-print("done")
+print("Close session.")
+print("Testing")
+print(pyqb.inventory(qb, tk))
