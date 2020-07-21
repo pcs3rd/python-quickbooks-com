@@ -40,4 +40,4 @@ Close the session. This also needs `qb, tk`.
 # Working on / High priority features:  
 - [x] Base: Grab item data using item number.
 - [x] Haha, inventory machine go burrrrr (inventory() function)  
-- [ ] Implament some more functions.
+- [ ] Potentially add more api calls, trying to get some work stuff done atm.
