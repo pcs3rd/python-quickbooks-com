@@ -1,6 +1,6 @@
 # python-quickbooks-com  
 
- A custom importable python script (eventually library) that will hopefully make talking to old versions of Quickbooks easier with python. This will hopefully allow for a band-aid solution for integrating with newer, REST based integrations powered by open source code. This way, we don't have to deal with soap garbage. Hopefully, this doesn't just dissapear since the quickbooks accountant used by my workplace told us to upgrade :/
+ A custom importable python script (eventually library) that will hopefully make talking to old versions of Quickbooks easier with python. This will hopefully allow for a band-aid solution for integrating with newer, REST based integrations powered by open source code. This way, we don't have to deal with soap garbage.
 # Compatibility note:  
  The 32-bit version of python3 must be installed because of how windows applications work.
 # Dependencies  
